@@ -1,5 +1,5 @@
 ```text
 yarn
-yarn start
-gg
+yarn start (desktop)
+yar start:web (web)
 ```
