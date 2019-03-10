@@ -1,0 +1,18 @@
+{
+  "name": "@coglite/tslint-config",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "dependencies": {
+    "tslint-config-standard": "8.0.1",
+    "tslint-eslint-rules": "5.4.0"
+  },
+  "devDependencies": {
+    "tslint": "5.13.1",
+    "typescript": "3.3.3333"
+  },
+  "directories": {"test": "test"},
+  "license": "MIT"
+}

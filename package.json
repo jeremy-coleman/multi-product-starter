@@ -1,0 +1,68 @@
+{
+  "name": "coglite",
+  "productName": "Coglite Desktop",
+  "description": "Coglite Desktop",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Coglite team",
+  "copyright": "2019, Coglite inc.",
+  "main": "dist/desktop/main.js",
+  "scripts": {
+    "bootstrap":"lerna bootstrap",
+    "start": "sucrase-node start.ts --max_old_space_size=4096",
+    "start:web":"cross-env NODE_ENV=development wp --config ./webpack.dev",
+    "forgestart":"electron-forge start",
+    "tscheck":"tsc -p tsconfig.json --noEmit true",
+    "electron-rebuild": "electron-rebuild"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7",
+    "@material-ui/core": "3.9.2",
+    "@material-ui/icons": "3.0.2",
+    "@material-ui/styles": "^3.0.0-alpha.10",
+    "csstips": "^0.3.0",
+    "csx": "^9.0.0",
+    "execa": "1.0.0",
+    "fs-jetpack": "2.2.2",
+    "log-symbols": "^2.2.0",
+    "mobx": "5.9.0",
+    "mobx-react": "5.4.3",
+    "mobx-react-devtools": "6.0.3",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-hot-loader": "4.8.0",
+    "react-router-dom": "4.3.1",
+    "sucrase": "3.9.6",
+    "tslib": "1.9.3",
+    "typestyle": "^2.0.1",
+    "when-switch": "^0.3.1",
+    "history":"4.7.2"
+  },
+  "devDependencies": {
+    "@coglite/devkit":"^0.0.1",
+    "lerna":"3.13.1",
+    "dotenv": "6.2.0",
+    "electron":"4.0.8",
+    "electron-rebuild":"1.8.4",
+    "electron-devtools-installer": "2.2.4",
+    "typescript": "3.3.3",
+    "webpack-nano": "^0.6.1"
+  },
+  "build": {
+    "appId": "com.example.coglite",
+    "files": [
+      "tasks/html/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "tasks/resources"
+    },
+    "publish": null
+  },
+  "sideEffects": false,
+  "workspaces": [
+    "packages/*",
+    "packages/sdk/*"
+  ]
+}
