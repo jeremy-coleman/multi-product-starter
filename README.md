@@ -1,3 +1,5 @@
- yarn
- yarn start
- gg
+```text
+yarn
+yarn start
+gg
+```
