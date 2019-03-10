@@ -1,3 +1,3 @@
-#yarn
-#yarn start
-#gg
+yarn
+yarn start
+gg
